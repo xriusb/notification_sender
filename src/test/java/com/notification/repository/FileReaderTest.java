@@ -14,7 +14,7 @@ public class FileReaderTest {
 
     @Before
     public void setup() {
-        String filePath = "/Users/xavier/Projects/email-sender/src/test/resources/testEmployees.txt";
+        String filePath = "/Users/xavier/Projects/notification_sender/src/test/resources/testEmployees.txt";
 
         testee = new FileReader(filePath);
     }
