@@ -4,6 +4,7 @@ import com.notification.model.Employee;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
 import java.time.LocalDate;
 
 import static org.junit.Assert.assertEquals;
@@ -14,7 +15,7 @@ public class FileReaderTest {
 
     @Before
     public void setup() {
-        String filePath = "/Users/xavier/Projects/notification_sender/src/test/resources/testEmployees.txt";
+        String filePath = new File("src/test/resources/testEmployees.txt").getAbsolutePath();
 
         testee = new FileReader(filePath);
     }
